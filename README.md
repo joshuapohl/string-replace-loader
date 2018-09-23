@@ -2,10 +2,14 @@
 
 Perform replacements (plain and regular expression) in the contents loaded by the loader.
 
+## Notice
+
+This is a fork of [string-replace-loader](https://github.com/Va1/string-replace-loader) with support for replacement callbacks. You can [track the original PR here](https://github.com/Va1/string-replace-loader/pull/48).
+
 ## Install:
 
 ```bash
-$ npm install --save-dev string-replace-loader
+$ npm install --save-dev @lightpohl/string-replace-loader
 ```
 
 With release of 2.0.0 the loader is expected to be used in Node v4+ environment.
@@ -29,7 +33,7 @@ module.exports = {
     rules: [
       {
         test: /fileInWhichJQueryIsUndefined\.js$/,
-        loader: 'string-replace-loader',
+        loader: '@lightpohl/string-replace-loader',
         options: {
           search: '$',
           replace: 'window.jQuery',
