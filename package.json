@@ -1,6 +1,6 @@
 {
   "name": "@lightpohl/string-replace-loader",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Fork of string-replace-loader: a replace loader for Webpack",
   "keywords": [
     "webpack",
