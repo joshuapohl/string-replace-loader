@@ -60,7 +60,7 @@ module.exports = {
     rules: [
       {
         test: /fileInWhichJQueryIsUndefined\.js$/,
-        loader: 'string-replace-loader',
+        loader: '@lightpohl/string-replace-loader',
         options: {
           search: '\$',
           replace: 'window.jQuery',
@@ -85,7 +85,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'string-replace-loader',
+        loader: '@lightpohl/string-replace-loader',
         options: {
           multiple: [
              { search: 'jQuery', replace: 'window.$' },
@@ -112,7 +112,7 @@ module.exports = {
     rules: [
       {
         test: /fileInWhichJQueryIsUndefined\.js$/,
-        loader: 'string-replace-loader',
+        loader: '@lightpohl/string-replace-loader',
         options: {
           search: 'jQuery',
           replace: 'window.$',
@@ -137,7 +137,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'string-replace-loader',
+        loader: '@lightpohl/string-replace-loader',
         options: {
           search: '^Hello, (.*)!$',
           replace: function(match, p1, offset, string){
